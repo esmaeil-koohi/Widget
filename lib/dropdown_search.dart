@@ -34,7 +34,7 @@ class _DropDownSearchPackageState extends State<DropDownSearchPackage> {
                ),
                ),
              ),
-           items: const ['Brazil', 'Italia', 'Tunisia', 'Canada'],
+            items: const ['Brazil', 'Italia', 'Tunisia', 'Canada'],
             onChanged: print,
             selectedItem: 'Brazil',
             dropdownDecoratorProps: DropDownDecoratorProps(
