@@ -8,12 +8,17 @@ class Challenge1 extends StatefulWidget {
 }
 
 class _Challenge1State extends State<Challenge1> {
+  List firstList = [1,2,3,4,5,6];
+  List secondList = [1,2,3,12,20,150];
+
   @override
   Widget build(BuildContext context) {
     print(intToMin(val: 122));
-    return Scaffold(
+    print(getDifference(firstList, secondList));
+    print(getDifference2(firstList, secondList));
+    return const Scaffold(
       body: Center(
-        child: Text(''),
+        child: Text('In the name of God'),
       ),
     );
   }
@@ -26,7 +31,29 @@ class _Challenge1State extends State<Challenge1> {
     return '$result';
   }
 
+  // challenge 2  The difference between the two lists
+ List getDifference(var first, var second){
+    List outPut = [];
+    for(final element in first){
+      if(!secondList.contains(element)){
+        outPut.add(element);
+      }
+    }
+    for(final element in second){
+      if(!firstList.contains(element)){
+        outPut.add(element);
+      }
+    }
+    return outPut;
+ }
 
+ //challenge 2  In the second way
+  List getDifference2(var first, var second){
+    List outPut = [];
+    outPut.addAll(first.where((element) => !second.contains(element)));
+    outPut.addAll(second.where((element) => !first.contains(element)));
+    return outPut;
+  }
 
 
 
