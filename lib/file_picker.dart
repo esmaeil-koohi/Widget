@@ -21,7 +21,7 @@ class _FilePickerPackageState extends State<FilePickerPackage> {
             FilePickerResult? result = await FilePicker.platform.pickFiles(
               type: FileType.custom,
              // allowMultiple: ejaze midim user chnd file entekhab kone
-              allowedExtensions: ['jpg', 'pdf', 'mp4'] , // ba in dastor b user ejaze midim k faqt in file ha k zekr shode ro entekhab kone
+              allowedExtensions: ['jpg', 'pdf', 'mp4'], // ba in dastor b user ejaze midim k faqt in file ha k zekr shode ro entekhab kone
             );  // This command opens the file manager
            if(result != null){
            File file = File(result.files.single.path!); // address file ra daryaft mikonim va b server ersal mikonim

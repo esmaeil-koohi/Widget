@@ -16,6 +16,7 @@ class _Challenge1State extends State<Challenge1> {
     print(intToMin(val: 122));
     print(getDifference(firstList, secondList));
     print(getDifference2(firstList, secondList));
+    data7daysAgo();
     return const Scaffold(
       body: Center(
         child: Text('In the name of God'),
@@ -54,6 +55,15 @@ class _Challenge1State extends State<Challenge1> {
     outPut.addAll(second.where((element) => !first.contains(element)));
     return outPut;
   }
+
+  // challenge 3
+ void data7daysAgo(){
+    var now = DateTime.now();
+    print('dateToday : $now');
+    for(var i = 0 ; i < 8 ; i++){
+      print(now.subtract(Duration(days: i-1)));
+    }
+ }
 
 
 
