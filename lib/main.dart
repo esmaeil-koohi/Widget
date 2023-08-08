@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widget_need/animated_switcher.dart';
 import 'package:widget_need/challenge1.dart';
 import 'package:widget_need/file_picker.dart';
+import 'package:widget_need/filter_in_list.dart';
 import 'package:widget_need/qr_code.dart';
 import 'package:widget_need/search_in_list.dart';
 import 'package:widget_need/steper_widget.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SearchInList(),
+      home: FilterInList(),
     );
   }
 }
