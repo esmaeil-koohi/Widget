@@ -23,6 +23,7 @@ class _AnimatedSwicherState extends State<AnimatedSwitcher1> {
             AnimatedSwitcher(
                 duration: const Duration(milliseconds: 200),
                 transitionBuilder: (child, animation) {
+
                   return ScaleTransition(scale: animation, child: child,);
                   // return FadeTransition(opacity: animation, child: child,);
                   // return RotationTransition(turns: animation, child: child,);
